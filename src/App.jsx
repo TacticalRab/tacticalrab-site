@@ -117,9 +117,8 @@ function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-[800px]">
         <h1 className="font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
-          The #1 daily creator<br />
-          across F1 and esports.<br />
-          <span className="text-accent">58M+ views annually.</span>
+          #1 in F1 & esports news.<br />
+          <span className="text-accent">58M+ views. Daily.</span>
         </h1>
 
         <div className="flex items-end gap-6 md:gap-10">
