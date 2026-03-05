@@ -215,15 +215,20 @@ function ChannelCard({ channel }) {
   const colors = colorMap[channel.color];
   return (
     <div className={`bg-bg p-8 md:p-10 relative overflow-hidden hover:-translate-y-1 transition-transform fade-up ${colors.border}`}>
-      <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 ${colors.avatarBorder}`} />
+      <div className="flex justify-between items-start gap-4">
+        <div>
+          <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 ${colors.avatarBorder}`} />
 
-      <div className={`inline-flex items-center gap-2 text-[0.62rem] font-bold tracking-[0.2em] uppercase px-3 py-1 mb-6 ${colors.tag}`}>
-        <div className={`w-[7px] h-[7px] rounded-full ${colors.dot}`} />
-        {channel.game}
+          <div className={`inline-flex items-center gap-2 text-[0.62rem] font-bold tracking-[0.2em] uppercase px-3 py-1 mb-6 ${colors.tag}`}>
+            <div className={`w-[7px] h-[7px] rounded-full ${colors.dot}`} />
+            {channel.game}
+          </div>
+
+          <div className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</div>
+          <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
+        </div>
+        <img src={channel.logo} alt={channel.game} className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mt-2" style={{ mixBlendMode: 'screen' }} />
       </div>
-
-      <div className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</div>
-      <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
 
       {/* Hero stat */}
       <div className="mb-8 pb-8 border-b border-white/[0.07]">
