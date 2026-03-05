@@ -93,9 +93,9 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-lisbon.jpg"
+          src="/images/about-photo.jpg"
           alt="Arran 'Rab' Francis in Lisbon"
-          className="hero-bg-img w-full h-full object-cover opacity-55"
+          className="hero-bg-img w-full h-full object-cover opacity-75"
         />
         {/* Bottom gradient */}
         <div className="absolute inset-0" style={{
@@ -116,9 +116,9 @@ function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-[800px]">
-        <h1 className="font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
+        <h1 className="font-display text-[clamp(2.2rem,5.5vw,5.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
           #1 in F1 & esports news.<br />
-          <span className="text-accent">58M+ views. Daily.</span>
+          <span className="text-accent">250M+ views.</span>
         </h1>
 
         <div className="flex items-end gap-6 md:gap-10">
@@ -154,7 +154,7 @@ function About() {
         {/* Photo */}
         <div className="relative">
           <img
-            src="/images/about-photo.jpg"
+            src="/images/hero-lisbon.jpg"
             alt="Arran 'Rab' Francis at a competitive Call of Duty event"
             className="w-full h-auto block border border-white/[0.07]"
           />
@@ -215,20 +215,15 @@ function ChannelCard({ channel }) {
   const colors = colorMap[channel.color];
   return (
     <div className={`bg-bg p-8 md:p-10 relative overflow-hidden hover:-translate-y-1 transition-transform fade-up ${colors.border}`}>
-      <div className="flex justify-between items-start gap-4">
-        <div>
-          <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 ${colors.avatarBorder}`} />
+      <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 ${colors.avatarBorder}`} />
 
-          <div className={`inline-flex items-center gap-2 text-[0.62rem] font-bold tracking-[0.2em] uppercase px-3 py-1 mb-6 ${colors.tag}`}>
-            <div className={`w-[7px] h-[7px] rounded-full ${colors.dot}`} />
-            {channel.game}
-          </div>
-
-          <div className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</div>
-          <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
-        </div>
-        <img src={channel.logo} alt={channel.game} className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain opacity-60 mt-2" />
+      <div className={`inline-flex items-center gap-2 text-[0.62rem] font-bold tracking-[0.2em] uppercase px-3 py-1 mb-6 ${colors.tag}`}>
+        <div className={`w-[7px] h-[7px] rounded-full ${colors.dot}`} />
+        {channel.game}
       </div>
+
+      <div className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</div>
+      <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
 
       {/* Hero stat */}
       <div className="mb-8 pb-8 border-b border-white/[0.07]">
