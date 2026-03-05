@@ -118,7 +118,7 @@ function Hero() {
       <div className="relative z-10 max-w-[800px]">
         <h1 className="font-display text-[clamp(2.2rem,5.5vw,5.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
           #1 in F1 & esports news.<br />
-          <span className="text-accent">250M+ lifetime views.</span>
+          <span className="text-accent">250M+ views.</span>
         </h1>
 
         <div className="flex items-end gap-6 md:gap-10">
@@ -168,10 +168,10 @@ function About() {
             Arran <span className="text-accent">"Rab"</span> Francis
           </h2>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-4 font-light">
-            I'm a sports news creator running three independent YouTube channels covering competitive Call of Duty, Valorant, and Formula 1. Publishing daily since 2018, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across competitive gaming and motorsport news.
+            I'm a sports news creator running three independent YouTube channels covering competitive Call of Duty, Valorant, and Formula 1. Publishing daily since 2016, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across competitive gaming and motorsport news.
           </p>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-6 font-light">
-            My F1 channel is the fastest-growing of the three and the one I'm most excited about right now — reaching an audience that spans the US, UK, and beyond.
+            My F1 channel is the fastest-growing of the three and the one I'm most excited about right now — combining long-form journalism with daily news coverage to reach an audience that spans the US, UK, and beyond.
           </p>
           <a href="#channels" className="bg-accent text-bg font-bold text-[0.85rem] tracking-[0.15em] uppercase px-9 py-4 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all inline-block">
             See the Channels
@@ -227,7 +227,9 @@ function ChannelCard({ channel }) {
           <div className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</div>
           <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
         </div>
-        <img src={channel.logo} alt={channel.game} className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mt-2" style={{ mixBlendMode: 'screen' }} />
+        {channel.logo && (
+          <img src={channel.logo} alt={channel.game} className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mt-2" style={{ mixBlendMode: 'screen' }} />
+        )}
       </div>
 
       {/* Hero stat */}
@@ -344,7 +346,7 @@ function AudienceSection() {
   return (
     <section id="audience" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px]">
       <SectionLabel>Audience</SectionLabel>
-      <SectionTitle>Who's<br />Watching?</SectionTitle>
+      <SectionTitle>Who's<br />Watching.</SectionTitle>
       <p className="text-base text-white/50 max-w-[520px] leading-relaxed mb-12 md:mb-16">
         95%+ male across all three channels. US-dominant with strong global representation — spanning the full 18–54 male demographic.
       </p>
@@ -396,6 +398,52 @@ function AudienceSection() {
               The F1 channel's <strong className="text-white">29.4% TV viewership</strong> is notable for brand awareness. Nearly 1 in 3 viewers watches on a big screen — amplifying visual product integrations significantly beyond typical YouTube figures.
             </p>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/* ───────────────────────────── Credentials ───────────────────────────── */
+
+function CredentialsSection() {
+  return (
+    <section className="relative py-24 md:py-36 overflow-hidden">
+      {/* Background image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/images/credentials-f1.jpg"
+          alt="TacticalRab trackside at the 2025 Canadian Grand Prix"
+          className="w-full h-full object-cover object-[center_45%] opacity-40"
+        />
+        <div className="absolute inset-0" style={{
+          background: 'linear-gradient(to bottom, rgba(7,7,15,1) 0%, rgba(7,7,15,0.3) 25%, rgba(7,7,15,0.3) 75%, rgba(7,7,15,1) 100%)'
+        }} />
+        <div className="absolute inset-0" style={{
+          background: 'linear-gradient(to right, rgba(7,7,15,0.85) 0%, rgba(7,7,15,0.2) 50%, rgba(7,7,15,0.6) 100%)'
+        }} />
+      </div>
+
+      <div className="relative z-10 px-6 md:px-[60px] max-w-[800px]">
+        <SectionLabel>On the Ground</SectionLabel>
+        <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-wide mb-8">
+          Not just online.<br />
+          <span className="text-accent">In the room.</span>
+        </h2>
+        <p className="text-[1rem] text-white/55 leading-relaxed mb-10 max-w-[520px] font-light">
+          Real-world presence across both esports and motorsport — embedded in the communities I cover, not just commentating from the outside.
+        </p>
+        <div className="flex flex-col gap-4">
+          {[
+            '10+ events attended as accredited press & creator',
+            'Multiple CDL analyst desk appearances',
+            'Trackside at the 2025 Canadian Grand Prix',
+          ].map((item, i) => (
+            <div key={i} className="flex items-center gap-3">
+              <span className="text-accent text-sm">→</span>
+              <span className="text-[0.92rem] text-white/75 font-medium">{item}</span>
+            </div>
+          ))}
         </div>
       </div>
     </section>
@@ -521,10 +569,10 @@ function ContactSection() {
           Whether you want to discuss a specific campaign or explore what's possible, reach out directly. All partnership enquiries are handled personally.
         </p>
         <a
-          href="mailto:tacticalrab@breakingpoint.gg"
+          href="mailto:steve@breakingpoint.gg"
           className="inline-block font-display text-[clamp(1.5rem,3.5vw,2.6rem)] tracking-[0.05em] text-white no-underline border-b-2 border-accent pb-1 mb-12 hover:text-accent transition-colors"
         >
-          tacticalrab@breakingpoint.gg
+          steve@breakingpoint.gg
         </a>
         <div className="flex justify-center gap-5 flex-wrap">
           {[
@@ -591,6 +639,7 @@ export default function App() {
       <ChannelsSection />
       <NetworkSection />
       <AudienceSection />
+      <CredentialsSection />
       <CaseStudySection />
       <OffersSection />
       <ContactSection />
