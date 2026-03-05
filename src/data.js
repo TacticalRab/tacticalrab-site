@@ -22,7 +22,7 @@ export const CHANNELS = [
     id: 'val',
     name: 'Valorant News',
     game: 'Competitive Valorant',
-    handle: '@TRValorant',
+    handle: '@TRValorant · Est. 2021',
     avatar: '/images/avatar-valorant.png',
     color: 'val',
     subs: '82K',
