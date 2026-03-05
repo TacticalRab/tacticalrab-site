@@ -93,7 +93,7 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-lisbon.jpg"
+          src="/images/about-photo.jpg"
           alt="Arran 'Rab' Francis in Lisbon"
           className="hero-bg-img w-full h-full object-cover opacity-55"
         />
@@ -154,7 +154,7 @@ function About() {
         {/* Photo */}
         <div className="relative">
           <img
-            src="/images/about-photo.jpg"
+            src="/images/hero-lisbon.jpg"
             alt="Arran 'Rab' Francis at a competitive Call of Duty event"
             className="w-full h-auto block border border-white/[0.07]"
           />
