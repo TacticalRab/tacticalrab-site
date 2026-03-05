@@ -5,7 +5,7 @@ import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFERS } from './d
 
 function SectionLabel({ children, center }) {
   return (
-    <div className={`flex items-center gap-3 mb-4 text-accent uppercase tracking-[0.35em] text-[0.7rem] font-semibold ${center ? 'justify-center' : ''}`}>
+    <div className={`flex items-center gap-3 mb-4 text-accent uppercase tracking-[0.35em] text-[0.7rem] font-semibold ${centesr ? 'justify-center' : ''}`}>
       <span className="block w-6 h-0.5 bg-accent" />
       {children}
     </div>
@@ -569,10 +569,10 @@ function ContactSection() {
           Whether you want to discuss a specific campaign or explore what's possible, reach out directly. All partnership enquiries are handled personally.
         </p>
         <a
-          href="mailto:steve@breakingpoint.gg"
+          href="mailto:tacticalrab@breakingpoint.gg"
           className="inline-block font-display text-[clamp(1.5rem,3.5vw,2.6rem)] tracking-[0.05em] text-white no-underline border-b-2 border-accent pb-1 mb-12 hover:text-accent transition-colors"
         >
-          steve@breakingpoint.gg
+          tacticalrab@breakingpoint.gg
         </a>
         <div className="flex justify-center gap-5 flex-wrap">
           {[
