@@ -19,12 +19,12 @@ body {
 
 /* Hero background image positioning */
 .hero-bg-img {
-  object-position: center 20%;
+  object-position: center 50%;
 }
 
 @media (min-width: 768px) {
   .hero-bg-img {
-    object-position: center 40%;
+    object-position: center 50%;
   }
 }
 
