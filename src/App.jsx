@@ -95,7 +95,7 @@ function Hero() {
         <img
           src="/images/hero-lisbon.jpg"
           alt="Arran 'Rab' Francis in Lisbon"
-          className="w-full h-full object-cover object-[center_30%] opacity-55"
+          className="hero-bg-img w-full h-full object-cover opacity-55"
         />
         {/* Bottom gradient */}
         <div className="absolute inset-0" style={{
@@ -117,18 +117,18 @@ function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-[800px]">
         <h1 className="font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
-          Three channels.<br />
-          58M+ views.<br />
-          <span className="text-accent">Zero overlap.</span>
+          The #1 daily creator<br />
+          across F1 and esports.<br />
+          <span className="text-accent">58M+ views annually.</span>
         </h1>
 
         <div className="flex items-end gap-6 md:gap-10">
           <div>
             <div className="font-display text-[clamp(3rem,6vw,5rem)] tracking-wide text-accent leading-none">
-              58M<span className="text-white/40">+</span>
+              777K<span className="text-white/40">+</span>
             </div>
             <div className="text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted mt-1.5">
-              Views per year across all channels
+              Unique viewers every month
             </div>
           </div>
           <a href="#about" className="text-white/50 text-[0.82rem] font-medium tracking-[0.1em] uppercase no-underline border-b border-white/20 pb-0.5 hover:text-white hover:border-white transition-all mb-2">
