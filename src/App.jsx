@@ -115,46 +115,24 @@ function Hero() {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[720px]">
-        <div className="flex items-center gap-3 text-accent uppercase tracking-[0.3em] text-[0.72rem] font-semibold mb-5 md:mb-6">
-          <span className="block w-10 h-0.5 bg-accent" />
-          Media Kit & Partnership Enquiry
-        </div>
-
-        <h1 className="font-display text-[clamp(3.5rem,10vw,9rem)] leading-[0.92] tracking-wide mb-6 md:mb-8">
-          Arran<br />
-          <span className="text-accent">"Rab" Francis</span>
+      <div className="relative z-10 max-w-[800px]">
+        <h1 className="font-display text-[clamp(3rem,7vw,6.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
+          Three channels.<br />
+          58M+ views.<br />
+          <span className="text-accent">Zero overlap.</span>
         </h1>
 
-        <p className="text-[1.05rem] text-white/60 max-w-[520px] leading-relaxed mb-10 md:mb-14 font-light">
-          Three YouTube channels. Three distinct audiences. Daily coverage across competitive gaming and motorsport — reaching 777K+ unique viewers every month.
-        </p>
-
-        {/* Stats */}
-        <div className="flex flex-wrap gap-8 md:gap-0 mb-10 md:mb-14">
-          {[
-            { num: '307', suffix: 'K+', label: 'Total Subscribers' },
-            { num: '58', suffix: 'M+', label: 'Views / Year' },
-            { num: '777', suffix: 'K+', label: 'Unique Monthly Viewers' },
-          ].map((stat, i) => (
-            <div key={i} className={`${i < 2 ? 'md:pr-11 md:mr-11 md:border-r md:border-white/15' : ''}`}>
-              <div className="font-display text-[2.6rem] md:text-[3.2rem] tracking-wide text-white leading-none">
-                {stat.num}<span className="text-accent">{stat.suffix}</span>
-              </div>
-              <div className="text-[0.68rem] md:text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted mt-1.5">
-                {stat.label}
-              </div>
+        <div className="flex items-end gap-6 md:gap-10">
+          <div>
+            <div className="font-display text-[clamp(3rem,6vw,5rem)] tracking-wide text-accent leading-none">
+              58M<span className="text-white/40">+</span>
             </div>
-          ))}
-        </div>
-
-        {/* Actions */}
-        <div className="flex gap-4 items-center">
-          <a href="#contact" className="bg-accent text-bg font-bold text-[0.85rem] tracking-[0.15em] uppercase px-9 py-4 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
-            Get In Touch
-          </a>
-          <a href="#channels" className="text-white/50 text-[0.85rem] font-medium tracking-[0.1em] uppercase no-underline border-b border-white/20 pb-0.5 hover:text-white hover:border-white transition-all">
-            Explore Channels ↓
+            <div className="text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted mt-1.5">
+              Views per year across all channels
+            </div>
+          </div>
+          <a href="#about" className="text-white/50 text-[0.82rem] font-medium tracking-[0.1em] uppercase no-underline border-b border-white/20 pb-0.5 hover:text-white hover:border-white transition-all mb-2">
+            Learn more ↓
           </a>
         </div>
       </div>
@@ -172,7 +150,7 @@ function Hero() {
 
 function About() {
   return (
-    <section className="bg-surface py-16 md:py-[100px] px-6 md:px-[60px]">
+    <section id="about" className="bg-surface py-16 md:py-[100px] px-6 md:px-[60px]">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-[1200px] mx-auto">
         {/* Photo */}
         <div className="relative">
