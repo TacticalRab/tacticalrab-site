@@ -93,9 +93,9 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/hero-f1.jpg"
-          alt="TacticalRab at Formula 1 Grand Prix"
-          className="w-full h-full object-cover object-[center_65%] opacity-55"
+          src="/images/hero-lisbon.jpg"
+          alt="Arran 'Rab' Francis in Lisbon"
+          className="w-full h-full object-cover object-[center_30%] opacity-55"
         />
         {/* Bottom gradient */}
         <div className="absolute inset-0" style={{
