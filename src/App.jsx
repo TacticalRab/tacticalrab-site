@@ -344,7 +344,7 @@ function AudienceSection() {
   return (
     <section id="audience" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px]">
       <SectionLabel>Audience</SectionLabel>
-      <SectionTitle>Who's<br />Watching.</SectionTitle>
+      <SectionTitle>Who's<br />Watching?</SectionTitle>
       <p className="text-base text-white/50 max-w-[520px] leading-relaxed mb-12 md:mb-16">
         95%+ male across all three channels. US-dominant with strong global representation — spanning the full 18–54 male demographic.
       </p>
@@ -521,10 +521,10 @@ function ContactSection() {
           Whether you want to discuss a specific campaign or explore what's possible, reach out directly. All partnership enquiries are handled personally.
         </p>
         <a
-          href="mailto:steve@breakingpoint.gg"
+          href="mailto:tacticalrab@breakingpoint.gg"
           className="inline-block font-display text-[clamp(1.5rem,3.5vw,2.6rem)] tracking-[0.05em] text-white no-underline border-b-2 border-accent pb-1 mb-12 hover:text-accent transition-colors"
         >
-          steve@breakingpoint.gg
+          tacticalrab@breakingpoint.gg
         </a>
         <div className="flex justify-center gap-5 flex-wrap">
           {[
