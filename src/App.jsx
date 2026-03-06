@@ -408,42 +408,40 @@ function AudienceSection() {
 
 function CredentialsSection() {
   return (
-    <section className="relative py-24 md:py-36 overflow-hidden">
-      {/* Background image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/images/credentials-f1.jpg"
-          alt="TacticalRab trackside at the 2025 Canadian Grand Prix"
-          className="w-full h-full object-cover object-[center_45%] opacity-40"
-        />
-        <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to bottom, rgba(7,7,15,1) 0%, rgba(7,7,15,0.3) 25%, rgba(7,7,15,0.3) 75%, rgba(7,7,15,1) 100%)'
-        }} />
-        <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to right, rgba(7,7,15,0.85) 0%, rgba(7,7,15,0.2) 50%, rgba(7,7,15,0.6) 100%)'
-        }} />
-      </div>
+    <section className="bg-bg py-16 md:py-[100px] px-6 md:px-[60px]">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center max-w-[1200px] mx-auto">
+        {/* Text — left side on desktop */}
+        <div>
+          <SectionLabel>On the Ground</SectionLabel>
+          <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-wide mb-6">
+            Not just online.<br />
+            <span className="text-accent">In the room.</span>
+          </h2>
+          <p className="text-[0.95rem] text-white/55 leading-[1.8] mb-8 font-light">
+            Real-world presence across both esports and motorsport — embedded in the communities I cover, not just commentating from the outside.
+          </p>
+          <div className="flex flex-col gap-4">
+            {[
+              '10+ events attended as accredited press & creator',
+              'Multiple CDL analyst desk appearances',
+              'Trackside at the 2025 Canadian Grand Prix',
+            ].map((item, i) => (
+              <div key={i} className="flex items-center gap-3">
+                <span className="text-accent text-sm">→</span>
+                <span className="text-[0.92rem] text-white/75 font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
+        </div>
 
-      <div className="relative z-10 px-6 md:px-[60px] max-w-[800px]">
-        <SectionLabel>On the Ground</SectionLabel>
-        <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-[0.95] tracking-wide mb-8">
-          Not just online.<br />
-          <span className="text-accent">In the room.</span>
-        </h2>
-        <p className="text-[1rem] text-white/55 leading-relaxed mb-10 max-w-[520px] font-light">
-          Real-world presence across both esports and motorsport — embedded in the communities I cover, not just commentating from the outside.
-        </p>
-        <div className="flex flex-col gap-4">
-          {[
-            '10+ events attended as accredited press & creator',
-            'Multiple CDL analyst desk appearances',
-            'Trackside at the 2025 Canadian Grand Prix',
-          ].map((item, i) => (
-            <div key={i} className="flex items-center gap-3">
-              <span className="text-accent text-sm">→</span>
-              <span className="text-[0.92rem] text-white/75 font-medium">{item}</span>
-            </div>
-          ))}
+        {/* Photo — right side on desktop, below on mobile */}
+        <div className="relative">
+          <img
+            src="/images/credentials-f1.jpg"
+            alt="TacticalRab trackside at the 2025 Canadian Grand Prix"
+            className="w-full h-auto block border border-white/[0.07]"
+          />
+          <div className="absolute top-4 -left-4 right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
         </div>
       </div>
     </section>
