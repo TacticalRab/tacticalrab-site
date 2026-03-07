@@ -156,7 +156,7 @@ function About() {
           <img
             src="/images/hero-lisbon.jpg"
             alt="Arran 'Rab' Francis at a competitive Call of Duty event"
-            className="w-full h-auto block border border-white/[0.07]"
+            className="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"
           />
           <div className="absolute top-4 left-4 -right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
         </div>
