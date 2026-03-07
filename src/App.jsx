@@ -6,7 +6,7 @@ import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFERS } from './d
 function SectionLabel({ children, center }) {
   return (
     <div className={`flex items-center gap-3 mb-4 text-accent uppercase tracking-[0.35em] text-[0.7rem] font-semibold ${center ? 'justify-center' : ''}`}>
-      <span className="block w-6 h-0.5 bg-accent" />
+      <span className="block w-6 h-0.5 bclassName="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"g-accent" />
       {children}
     </div>
   );
@@ -156,7 +156,7 @@ function About() {
           <img
             src="/images/hero-lisbon.jpg"
             alt="Arran 'Rab' Francis at a competitive Call of Duty event"
-            className="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"
+            className="w-full h-auto block border border-white/[0.07]"
           />
           <div className="absolute top-4 left-4 -right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
         </div>
@@ -439,7 +439,7 @@ function CredentialsSection() {
           <img
             src="/images/credentials-f1.jpg"
             alt="TacticalRab trackside at the 2025 Canadian Grand Prix"
-            className="w-full h-auto block border border-white/[0.07]"
+            className="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"
           />
           <div className="absolute top-4 -left-4 right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
         </div>
