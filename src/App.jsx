@@ -95,7 +95,7 @@ function Hero() {
         <img
           src="/images/about-photo.jpg"
           alt="Arran 'Rab' Francis in Lisbon"
-          className="hero-bg-img w-full h-full object-cover opacity-85"
+          className="hero-bg-img w-full h-full object-cover opacity-100"
         />
         {/* Bottom gradient */}
         <div className="absolute inset-0" style={{
