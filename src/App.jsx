@@ -6,7 +6,7 @@ import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFERS } from './d
 function SectionLabel({ children, center }) {
   return (
     <div className={`flex items-center gap-3 mb-4 text-accent uppercase tracking-[0.35em] text-[0.7rem] font-semibold ${center ? 'justify-center' : ''}`}>
-      <span className="block w-6 h-0.5 bclassName="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"g-accent" />
+      <span className="block w-6 h-0.5 bg-accent" />
       {children}
     </div>
   );
