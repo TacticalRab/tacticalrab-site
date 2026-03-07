@@ -164,14 +164,14 @@ function About() {
         {/* Text */}
         <div>
           <SectionLabel>About</SectionLabel>
-          <h2 className="font-display text-[clamp(2.2rem,5vw,5rem)] leading-[0.95] tracking-wide mb-2">
+          <h2 className="font-display text-[clamp(2.2rem,3.8vw,4rem)] leading-[0.95] tracking-wide mb-2">
             Arran <span className="text-accent">"Rab"</span> Francis
           </h2>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-4 font-light">
-            I'm a sports news creator running three independent YouTube channels covering competitive Call of Duty, Valorant, and Formula 1. Publishing daily since 2016, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across competitive gaming and motorsport news.
+            I'm a sports news creator running three independent YouTube channels covering competitive Call of Duty, Valorant, and Formula 1. Publishing daily since 2018, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across competitive gaming and motorsport news.
           </p>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-6 font-light">
-            My F1 channel is the fastest-growing of the three and the one I'm most excited about right now — combining long-form journalism with daily news coverage to reach an audience that spans the US, UK, and beyond.
+            My F1 channel is the fastest-growing of the three and the one I'm most excited about right now, reaching an audience across the US, UK, and beyond.
           </p>
           <a href="#channels" className="bg-accent text-bg font-bold text-[0.85rem] tracking-[0.15em] uppercase px-9 py-4 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all inline-block">
             See the Channels
