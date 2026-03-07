@@ -114,9 +114,9 @@ export const GEO_DATA = [
   { flag: '🇺🇸', country: 'United States', pct: '~40%' },
   { flag: '🇬🇧', country: 'United Kingdom', pct: '~15%' },
   { flag: '🇨🇦', country: 'Canada', pct: '~6%' },
-  { flag: '🇮🇳', country: 'India', pct: '~7%' },
-  { flag: '🇦🇺', country: 'Australia', pct: '~4%' },
-  { flag: '🌍', country: 'Rest of World', pct: '~28%' },
+  { flag: '🇦🇺', country: 'Australia', pct: '~5%' },
+  { flag: '🇮🇳', country: 'India', pct: '~4%' },
+  { flag: '🌍', country: 'Rest of World', pct: '~30%' },
 ];
 
 export const OFFERS = [
