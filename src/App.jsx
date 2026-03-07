@@ -196,7 +196,7 @@ function OverlapCallout() {
           <span className="text-accent">Minimal overlap.</span>
         </h2>
         <p className="text-[1.05rem] text-white/55 leading-[1.8] max-w-[640px] mx-auto">
-          Each channel was built organically with <strong className="text-white">no cross-promotion</strong>, serving entirely different communities. A partnership across all three channels reaches approximately <strong className="text-white">307K true unique subscribers</strong> and <strong className="text-white">777K+ unique monthly viewers</strong> — not the same audience counted three times.
+          Each channel was built organically with <strong className="text-white">no cross-promotion</strong>, serving entirely different communities. A partnership across all three channels reaches approximately <strong className="text-white">300K true unique subscribers</strong> and <strong className="text-white">777K+ unique monthly viewers</strong> — not the same audience counted three times.
         </p>
       </div>
     </section>
@@ -281,7 +281,7 @@ function ChannelsSection() {
         Three Verticals.<br />Built Daily.
       </SectionTitle>
       <p className="text-base text-white/50 max-w-[520px] leading-relaxed mb-12 md:mb-16">
-        Each channel publishes daily news coverage to a loyal, engaged audience. Different games, different demographics — same editorial standard.
+        Each channel publishes daily news coverage to a loyal, engaged audience. Different games, different demographics — built from scratch.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5">
         {CHANNELS.map((ch) => (
