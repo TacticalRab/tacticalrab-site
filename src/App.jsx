@@ -164,7 +164,7 @@ function About() {
         {/* Text */}
         <div>
           <SectionLabel>About</SectionLabel>
-          <h2 className="font-display text-[clamp(3rem,5vw,5rem)] leading-[0.95] tracking-wide mb-2">
+          <h2 className="font-display text-[clamp(2.2rem,5vw,5rem)] leading-[0.95] tracking-wide mb-2">
             Arran <span className="text-accent">"Rab"</span> Francis
           </h2>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-4 font-light">
