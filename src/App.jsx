@@ -437,7 +437,7 @@ function CredentialsSection() {
         {/* Photo — right side on desktop, below on mobile */}
         <div className="relative">
           <img
-            src="/images/2.jpg"
+            src="/images/02.jpeg"
             alt="TacticalRab at CDL Major 5, Toronto 2024"
             className="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"
           />
