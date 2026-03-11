@@ -74,7 +74,7 @@ export const CASE_STUDY = {
   title: 'ZOWIE BenQ',
   campaign: 'XL2566X+ Monitor & 4K Wireless Mice Launch',
   event: 'Sentinels × ZOWIE VIP Event — Oct 5, 2024',
-  description: 'TacticalRab partnered with ZOWIE to promote two new product launches — the XL2566X+ monitor and 4K wireless mice — through dedicated video content on the TacticalRab channel.',
+  description: 'TacticalRab partnered with ZOWIE to promote two new product launches — the XL2566X+ monitor and 4K wireless mice — through dedicated video content on the @TRValorant channel.',
   metrics: [
     { value: '0.9M', label: 'Total Ad Impressions', sub: 'Across two sponsored videos' },
     { value: '900+', label: 'Direct Click-Throughs', sub: 'To ZOWIE product pages' },
