@@ -269,8 +269,8 @@ function ChannelsSection() {
       </div>
 
       {/* Inline CTA */}
-      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-        <span className="text-[0.95rem] text-white/50 font-light">Like what you see?</span>
+      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <span className="text-[1.05rem] text-white/60 font-medium">Like what you see?</span>
         <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
           Partner With Me
         </a>
@@ -290,7 +290,7 @@ function NetworkSection() {
   ];
 
   return (
-    <section id="network" className="bg-bg py-16 md:py-[120px] px-6 md:px-[60px] text-center">
+    <section id="network" className="bg-bg py-16 md:py-[80px] px-6 md:px-[60px] text-center">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel center>Combined Network</SectionLabel>
         <div className="font-display text-[clamp(2rem,4vw,3.2rem)] tracking-[0.05em] text-white/30 mb-6 leading-relaxed">
@@ -444,7 +444,7 @@ function CaseStudySection() {
   return (
     <section id="results" className="bg-bg py-16 md:py-[120px] px-6 md:px-[60px]">
       <SectionLabel>Partnership Results</SectionLabel>
-      <SectionTitle>Proven.<br />Measurable. Real.</SectionTitle>
+      <SectionTitle>Case Study.</SectionTitle>
       <p className="text-base text-white/50 max-w-[520px] leading-relaxed mb-12 md:mb-16">
         A track record of delivering results for brands — and an audience that responds positively to sponsors.
       </p>
@@ -521,8 +521,8 @@ function CaseStudySection() {
       </div>
 
       {/* Inline CTA */}
-      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-        <span className="text-[0.95rem] text-white/50 font-light">Ready to see results like these?</span>
+      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+        <span className="text-[1.05rem] text-white/60 font-medium">Ready to see results like these?</span>
         <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
           Partner With Me
         </a>
