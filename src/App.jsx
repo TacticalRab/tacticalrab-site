@@ -429,7 +429,7 @@ function CredentialsSection() {
           <img
             src="/images/02.jpeg"
             alt="TacticalRab at CDL Major 5, Toronto 2024"
-            className="w-full h-[280px] md:h-[360px] object-cover object-[center_55%] block border border-white/[0.07]"
+            className="w-full h-[280px] md:h-[420px] object-cover object-[30%_40%] block border border-white/[0.07]"
           />
           <div className="absolute top-4 -left-4 right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
         </div>
