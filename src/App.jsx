@@ -544,9 +544,6 @@ function ContactSection() {
         <p className="text-base text-white/50 leading-[1.8] mb-4">
           From one-off video integrations to long-term multi-channel partnerships — let's find the right fit for your brand.
         </p>
-        <p className="text-[0.85rem] text-white/35 leading-[1.8] mb-12">
-          Rate card available on request. All enquiries responded to within 24 hours.
-        </p>
         <a
           href="mailto:tacticalrab@breakingpoint.gg"
           className="inline-block font-display text-[clamp(1.5rem,3.5vw,2.6rem)] tracking-[0.05em] text-white no-underline border-b-2 border-accent pb-1 mb-12 hover:text-accent transition-colors"
