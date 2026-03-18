@@ -293,9 +293,9 @@ function NetworkSection() {
     <section id="network" className="bg-bg py-16 md:py-[40px] px-6 md:px-[60px] text-center">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel center>Combined Network</SectionLabel>
-        <div className="font-display text-[clamp(2rem,4vw,3.2rem)] tracking-[0.05em] text-white/30 mb-6 leading-relaxed">
+        <div className="font-display text-[clamp(2rem,3vw,2.4rem)] tracking-[0.05em] text-white/30 mb-6 leading-relaxed">
           Three channels. Zero overlap.
-          <strong className="text-white block text-[clamp(3.5rem,6vw,5rem)] leading-[0.9] tracking-wide">
+          <strong className="text-white block text-[clamp(3.5rem,8vw,7rem)] leading-[0.9] tracking-wide">
             58<span className="text-accent">M+</span> Views per Year
           </strong>
         </div>
