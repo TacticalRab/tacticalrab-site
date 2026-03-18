@@ -336,7 +336,7 @@ function AudienceSection() {
   return (
     <section id="audience" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px]">
       <SectionLabel>Audience</SectionLabel>
-      <SectionTitle>Who's<br />Watching?</SectionTitle>
+      <SectionTitle>Who's Watching?</SectionTitle>
       <p className="text-base text-white/50 max-w-[520px] leading-relaxed mb-12 md:mb-16">
         95%+ male across all three channels. US-dominant with strong global representation — spanning the full 18–54 male demographic.
       </p>
