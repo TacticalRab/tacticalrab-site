@@ -290,7 +290,7 @@ function NetworkSection() {
   ];
 
   return (
-    <section id="network" className="bg-bg py-16 md:py-[0px] px-6 md:px-[60px] text-center">
+    <section id="network" className="bg-bg py-16 md:py-[40px] px-6 md:px-[60px] text-center">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel center>Combined Network</SectionLabel>
         <div className="font-display text-[clamp(2rem,4vw,3.2rem)] tracking-[0.05em] text-white/30 mb-6 leading-relaxed">
