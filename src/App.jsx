@@ -461,16 +461,31 @@ function CaseStudySection() {
 
       <div className="bg-surface border border-white/[0.07] overflow-hidden">
         {/* Header */}
-        <div className="relative overflow-hidden p-8 md:p-14 flex flex-col md:flex-row justify-between items-start md:items-end gap-8 case-watermark" style={{ background: 'linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%)' }}>
-          <div>
-            <div className="text-[0.68rem] font-bold tracking-[0.3em] uppercase text-pink mb-3.5">Case Study · Q4 2024</div>
-            <h3 className="font-display text-[2rem] md:text-[2.6rem] tracking-[0.05em] leading-none">
-              ZOWIE BenQ <span className="text-pink">×</span> TacticalRab
-            </h3>
+        <div className="relative overflow-hidden p-8 md:p-14 case-watermark" style={{ background: 'linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%)' }}>
+          <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
+            <div>
+              <div className="text-[0.68rem] font-bold tracking-[0.3em] uppercase text-pink mb-3.5">Case Study · Q4 2024</div>
+              <h3 className="font-display text-[2rem] md:text-[2.6rem] tracking-[0.05em] leading-none">
+                ZOWIE BenQ <span className="text-pink">×</span> TacticalRab
+              </h3>
+            </div>
+            <img
+              src="/images/zowie-sentinels-logo.png"
+              alt="ZOWIE x Sentinels"
+              className="h-[60px] md:h-[80px] object-contain hidden md:block"
+              style={{ mixBlendMode: 'screen' }}
+            />
+            <p className="text-[0.88rem] text-white/60 leading-relaxed max-w-[380px]">
+              {CASE_STUDY.description}
+            </p>
           </div>
-          <p className="text-[0.88rem] text-white/60 leading-relaxed max-w-[380px]">
-            {CASE_STUDY.description}
-          </p>
+          {/* Mobile logo */}
+          <img
+            src="/images/zowie-sentinels-logo.png"
+            alt="ZOWIE x Sentinels"
+            className="h-[50px] object-contain mt-6 md:hidden"
+            style={{ mixBlendMode: 'screen' }}
+          />
         </div>
 
         {/* Metrics grid */}
@@ -482,6 +497,21 @@ function CaseStudySection() {
               <div className="text-[0.78rem] text-white/40 mt-1.5">{m.sub}</div>
             </div>
           ))}
+        </div>
+
+        {/* Integration example */}
+        <div className="p-8 md:p-14 border-t border-white/[0.07] bg-surface2">
+          <div className="text-[0.68rem] font-semibold tracking-[0.2em] uppercase text-pink mb-5">
+            Integration Example · Always-On Rotational Unit
+          </div>
+          <img
+            src="/images/zowie-integration-example.png"
+            alt="Example of ZOWIE rotational ad unit integration across video content"
+            className="w-full max-w-[900px] h-auto rounded border border-white/[0.07]"
+          />
+          <p className="text-[0.82rem] text-white/40 mt-4 max-w-[600px]">
+            Rotating product cards displayed throughout the video — exposing viewers to new products and purchase links an average of 8 times per video.
+          </p>
         </div>
 
         {/* Audience reaction */}
