@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFERS } from './data';
+import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA } from './data';
 
 /* ───────────────────────────── Utility Components ───────────────────────────── */
 
@@ -182,27 +182,6 @@ function About() {
   );
 }
 
-/* ───────────────────────────── Overlap Callout ───────────────────────────── */
-
-function OverlapCallout() {
-  return (
-    <section className="bg-bg py-16 md:py-[100px] px-6 md:px-[60px]">
-      <div className="max-w-[900px] mx-auto text-center">
-        <div className="inline-block text-[0.65rem] font-bold tracking-[0.3em] uppercase text-accent px-4 py-1.5 border border-accent/25 mb-8">
-          Key Differentiator
-        </div>
-        <h2 className="font-display text-[clamp(2.5rem,5vw,4.5rem)] leading-none tracking-wide mb-6">
-          Three channels. Three audiences.<br />
-          <span className="text-accent">Minimal overlap.</span>
-        </h2>
-        <p className="text-[1.05rem] text-white/55 leading-[1.8] max-w-[640px] mx-auto">
-          Each channel was built organically with <strong className="text-white">no cross-promotion</strong>, serving entirely different communities. A partnership across all three channels reaches approximately <strong className="text-white">300K true unique subscribers</strong> and <strong className="text-white">777K+ unique monthly viewers</strong> — not the same audience counted three times.
-        </p>
-      </div>
-    </section>
-  );
-}
-
 /* ───────────────────────────── Channel Card ───────────────────────────── */
 
 const colorMap = {
@@ -288,6 +267,14 @@ function ChannelsSection() {
           <ChannelCard key={ch.id} channel={ch} />
         ))}
       </div>
+
+      {/* Inline CTA */}
+      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+        <span className="text-[0.95rem] text-white/50 font-light">Like what you see?</span>
+        <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
+          Partner With Me
+        </a>
+      </div>
     </section>
   );
 }
@@ -306,12 +293,15 @@ function NetworkSection() {
     <section id="network" className="bg-bg py-16 md:py-[120px] px-6 md:px-[60px] text-center">
       <div className="max-w-[1100px] mx-auto">
         <SectionLabel center>Combined Network</SectionLabel>
-        <div className="font-display text-[clamp(2rem,4vw,3.2rem)] tracking-[0.05em] text-white/30 mb-12 md:mb-16 leading-relaxed">
-          Across all three channels
+        <div className="font-display text-[clamp(2rem,4vw,3.2rem)] tracking-[0.05em] text-white/30 mb-6 leading-relaxed">
+          Three channels. Zero overlap.
           <strong className="text-white block text-[clamp(3.5rem,8vw,7rem)] leading-[0.9] tracking-wide">
             58<span className="text-accent">M+</span> Views per Year
           </strong>
         </div>
+        <p className="text-[0.95rem] text-white/45 max-w-[580px] mx-auto mb-12 md:mb-16 leading-relaxed">
+          Each channel was built organically with no cross-promotion — a partnership across all three reaches <strong className="text-white">777K+ unique monthly viewers</strong>, not the same audience counted three times.
+        </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-0.5 mb-12 md:mb-16">
           {stats.map((s, i) => (
             <div key={i} className="bg-surface p-8 md:p-11 relative overflow-hidden net-stat-glow">
@@ -529,55 +519,13 @@ function CaseStudySection() {
           </div>
         </div>
       </div>
-    </section>
-  );
-}
 
-/* ───────────────────────────── Partnership Options ───────────────────────────── */
-
-function OffersSection() {
-  return (
-    <section id="offer" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px]">
-      <SectionLabel>Partnership Formats</SectionLabel>
-      <SectionTitle>Ways to<br />Work Together.</SectionTitle>
-      <p className="text-base text-white/50 max-w-[520px] leading-relaxed mb-12 md:mb-16">
-        Flexible formats tailored to your goals — from one-off activations to long-term brand presence.
-      </p>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-0.5">
-        {OFFERS.map((offer, i) => (
-          <div
-            key={i}
-            className={`p-8 md:p-10 relative overflow-hidden hover:-translate-y-1 transition-transform fade-up ${
-              offer.featured ? 'bg-accent text-bg' : 'bg-bg'
-            }`}
-          >
-            <div className={`inline-block text-[0.6rem] font-bold tracking-[0.2em] uppercase px-2.5 py-1 mb-5 ${
-              offer.featured ? 'bg-black/15 text-bg' : 'bg-accent/10 text-accent'
-            }`}>
-              {offer.tag}
-            </div>
-            <div className={`font-display text-[2rem] tracking-[0.04em] mb-2.5 leading-none ${
-              offer.featured ? 'text-bg' : ''
-            }`}>
-              {offer.title}
-            </div>
-            <p className={`text-[0.85rem] leading-relaxed mb-7 ${
-              offer.featured ? 'text-bg/65' : 'text-white/50'
-            }`}>
-              {offer.description}
-            </p>
-            <ul className="list-none p-0 m-0">
-              {offer.features.map((f, j) => (
-                <li key={j} className={`flex items-start gap-2.5 text-[0.82rem] py-2.5 border-b leading-relaxed last:border-b-0 ${
-                  offer.featured ? 'border-black/15 text-bg/85' : 'border-white/[0.07] text-white/65'
-                }`}>
-                  <span className={`shrink-0 mt-0.5 ${offer.featured ? 'text-bg' : 'text-accent'}`}>→</span>
-                  {f}
-                </li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      {/* Inline CTA */}
+      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
+        <span className="text-[0.95rem] text-white/50 font-light">Ready to see results like these?</span>
+        <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
+          Partner With Me
+        </a>
       </div>
     </section>
   );
@@ -587,14 +535,17 @@ function OffersSection() {
 
 function ContactSection() {
   return (
-    <section id="contact" className="bg-bg py-16 md:py-[120px] px-6 md:px-[60px] text-center">
+    <section id="contact" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px] text-center">
       <div className="max-w-[700px] mx-auto">
         <SectionLabel center>Get In Touch</SectionLabel>
         <h2 className="font-display text-[clamp(3rem,7vw,6rem)] leading-[0.95] tracking-wide mb-6">
           Let's Build<br />Something <span className="text-accent">Together</span>
         </h2>
-        <p className="text-base text-white/50 leading-[1.8] mb-12">
-          Whether you want to discuss a specific campaign or explore what's possible, reach out directly. All partnership enquiries are handled personally.
+        <p className="text-base text-white/50 leading-[1.8] mb-4">
+          From one-off video integrations to long-term multi-channel partnerships — let's find the right fit for your brand.
+        </p>
+        <p className="text-[0.85rem] text-white/35 leading-[1.8] mb-12">
+          Rate card available on request. All enquiries responded to within 24 hours.
         </p>
         <a
           href="mailto:tacticalrab@breakingpoint.gg"
@@ -663,13 +614,11 @@ export default function App() {
       <Nav />
       <Hero />
       <About />
-      <OverlapCallout />
       <ChannelsSection />
       <NetworkSection />
       <AudienceSection />
       <CredentialsSection />
       <CaseStudySection />
-      <OffersSection />
       <ContactSection />
       <Footer />
     </>
