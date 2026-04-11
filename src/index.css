@@ -19,8 +19,8 @@ body {
 
 /* Hero background image positioning */
 .hero-bg-img {
-  object-position: 60% 3%;
-  transform: scale(1.5) translateY(-5%);
+  object-position: 80% 0%;
+  transform: scale(1.8) translateY(-5%);
 }
 
 @media (min-width: 768px) {
