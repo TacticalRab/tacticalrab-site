@@ -93,8 +93,8 @@ function Hero() {
       {/* Background image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/images/about-photo.jpg"
-          alt="Arran 'Rab' Francis in Lisbon"
+          src="/images/DSC00226.jpg"
+          alt="Arran 'Rab' Francis in CDL Major 2, 2026 in Birmingham"
           className="hero-bg-img w-full h-full object-cover opacity-100"
         />
         {/* Bottom gradient */}
