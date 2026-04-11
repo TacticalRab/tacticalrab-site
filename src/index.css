@@ -25,7 +25,7 @@ body {
 
 @media (min-width: 768px) {
   .hero-bg-img {
-    object-position: 55% 80%;
+    object-position: 75% 50%;
     transform: none;
   }
 }
