@@ -1,5 +1,25 @@
 export const CHANNELS = [
   {
+    id: 'f1',
+    name: 'F1 News',
+    game: 'Formula 1',
+    handle: '@F1NewsTR · Est. 2022',
+    avatar: '/images/avatar-f1.png',
+    logo: '/images/logo-f1.png',
+    color: 'f1',
+    subs: '100,000+',
+    views90: '5.8M',
+    views365: '22.9M',
+    avgDuration: '10m 04s',
+    uniqueMonthly: '360K',
+    cadence: '1 video / day',
+    highlight: 'Watched on TV',
+    highlightVal: '29.4%',
+    topGeo: 'US 25% · UK 22%',
+    coreAge: '25–54 (73%)',
+    badge: 'Flagship · Highest Reach',
+  },
+  {
     id: 'cod',
     name: 'TacticalRab',
     game: 'Competitive CoD',
@@ -17,7 +37,7 @@ export const CHANNELS = [
     highlightVal: '80%',
     topGeo: 'US 65% · UK 14%',
     coreAge: '25–34 (60%)',
-    badge: 'Flagship Channel',
+    badge: 'Longest Running · Most Subscribers',
   },
   {
     id: 'val',
@@ -38,26 +58,6 @@ export const CHANNELS = [
     topGeo: 'US 29% · IN 13%',
     coreAge: '18–34 (82%)',
     badge: 'Highest Discovery Rate',
-  },
-  {
-    id: 'f1',
-    name: 'F1 News',
-    game: 'Formula 1',
-    handle: '@F1NewsTR · Est. 2022',
-    avatar: '/images/avatar-f1.png',
-    logo: '/images/logo-f1.png',
-    color: 'f1',
-    subs: '100,000+',
-    views90: '5.8M',
-    views365: '22.9M',
-    avgDuration: '10m 04s',
-    uniqueMonthly: '360K',
-    cadence: '1 video / day',
-    highlight: 'TV viewership',
-    highlightVal: '29.4%',
-    topGeo: 'US 25% · UK 22%',
-    coreAge: '25–54 (73%)',
-    badge: 'Fastest Growing · Highest Views',
   },
 ];
 
@@ -91,6 +91,13 @@ export const CASE_STUDY = {
 };
 
 export const AGE_DATA = {
+  f1: [
+    { range: '18–24', pct: 9.3 },
+    { range: '25–34', pct: 27.2 },
+    { range: '35–44', pct: 26.4 },
+    { range: '45–54', pct: 18.5 },
+    { range: '55–64', pct: 11.8 },
+  ],
   cod: [
     { range: '18–24', pct: 16.3 },
     { range: '25–34', pct: 59.8 },
@@ -100,13 +107,6 @@ export const AGE_DATA = {
     { range: '18–24', pct: 39.2 },
     { range: '25–34', pct: 43.1 },
     { range: '35–44', pct: 9.1 },
-  ],
-  f1: [
-    { range: '18–24', pct: 9.3 },
-    { range: '25–34', pct: 27.2 },
-    { range: '35–44', pct: 26.4 },
-    { range: '45–54', pct: 18.5 },
-    { range: '55–64', pct: 11.8 },
   ],
 };
 
