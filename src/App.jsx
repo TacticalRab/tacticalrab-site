@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA } from './data';
+import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFER, PAST_PARTNERS } from './data';
 
 /* ───────────────────────────── Utility Components ───────────────────────────── */
 
@@ -77,6 +77,7 @@ function Nav() {
         <a href="#network" className="hidden lg:inline text-[0.72rem] font-semibold tracking-[0.15em] uppercase text-muted no-underline hover:text-white transition-colors">Numbers</a>
         <a href="#audience" className="hidden lg:inline text-[0.72rem] font-semibold tracking-[0.15em] uppercase text-muted no-underline hover:text-white transition-colors">Audience</a>
         <a href="#results" className="hidden lg:inline text-[0.72rem] font-semibold tracking-[0.15em] uppercase text-muted no-underline hover:text-white transition-colors">Results</a>
+        <a href="#deliverables" className="hidden lg:inline text-[0.72rem] font-semibold tracking-[0.15em] uppercase text-muted no-underline hover:text-white transition-colors">What You Get</a>
         <a href="#contact" className="bg-accent text-bg font-bold text-[0.75rem] tracking-[0.15em] uppercase px-6 py-2.5 no-underline btn-skew-sm hover:bg-white hover:-translate-y-0.5 transition-all">
           Partner With Me
         </a>
@@ -94,7 +95,7 @@ function Hero() {
       <div className="absolute inset-0 z-0">
         <img
           src="/images/DSC00226.jpg"
-          alt="Arran 'Rab' Francis in CDL Major 2, 2026 in Birmingham"
+          alt="Arran 'Rab' Francis reporting as accredited press at CDL Major 2, Birmingham 2026"
           className="hero-bg-img w-full h-full object-cover opacity-100"
         />
         {/* Bottom gradient */}
@@ -155,7 +156,7 @@ function About() {
         <div className="relative">
           <img
             src="/images/hero-lisbon.jpg"
-            alt="Arran 'Rab' Francis at a competitive Call of Duty event"
+            alt="Arran 'Rab' Francis on the analyst desk at a Call of Duty League event"
             className="w-full h-auto block border border-white/[0.07]"
           />
           <div className="absolute top-4 left-4 -right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
@@ -414,9 +415,9 @@ function CredentialsSection() {
           </p>
           <div className="flex flex-col gap-4">
             {[
+              'Trackside at the 2025 Canadian Grand Prix',
               '10+ events attended as accredited press & creator',
               'Multiple CDL analyst desk appearances',
-              'Trackside at the 2025 Canadian Grand Prix',
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-3">
                 <span className="text-accent text-sm">→</span>
@@ -430,7 +431,7 @@ function CredentialsSection() {
         <div className="relative">
           <img
             src="/images/02.jpeg"
-            alt="TacticalRab at CDL Major 5, Toronto 2024"
+            alt="TacticalRab with accredited press access at CDL Major 5, Toronto 2024"
             className="w-full h-[280px] md:h-[400px] object-cover object-[15%_35%] block border border-white/[0.07]"
           />
           <div className="absolute top-4 -left-4 right-4 -bottom-4 border-2 border-accent/30 pointer-events-none hidden md:block" />
@@ -535,6 +536,77 @@ function CaseStudySection() {
 
 /* ───────────────────────────── Contact ───────────────────────────── */
 
+/* ───────────────────────────── Deliverables ───────────────────────────── */
+
+function DeliverablesSection() {
+  return (
+    <section id="deliverables" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px]">
+      <div className="max-w-[1200px] mx-auto">
+        <SectionLabel>{OFFER.label}</SectionLabel>
+        <SectionTitle>
+          {OFFER.titleTop}<br />{OFFER.titleBottom}
+        </SectionTitle>
+        <p className="text-base text-white/50 max-w-[560px] leading-relaxed mb-12 md:mb-16">
+          {OFFER.intro}
+        </p>
+
+        {/* The two core deliverables */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0.5 mb-12 md:mb-16">
+          {OFFER.core.map((item, i) => (
+            <div key={i} className="bg-bg p-8 md:p-10 border-t-2 border-accent fade-up">
+              <div className="font-display text-[1.6rem] tracking-[0.04em] mb-4 leading-tight">
+                {item.title}
+              </div>
+              <p className="text-[0.92rem] text-white/60 leading-[1.75] font-light">
+                {item.body}
+              </p>
+            </div>
+          ))}
+        </div>
+
+        {/* The dials */}
+        <div className="text-[0.68rem] font-semibold tracking-[0.18em] uppercase text-muted mb-6">
+          What We Decide Together
+        </div>
+        <dl className="grid grid-cols-1 md:grid-cols-3 gap-0.5 mb-12">
+          {OFFER.dials.map((d, i) => (
+            <div key={i} className="bg-bg p-7 md:p-8 fade-up">
+              <dt className="text-[0.95rem] font-semibold text-white mb-3">{d.title}</dt>
+              <dd className="text-[0.86rem] text-white/55 leading-[1.7] font-light">{d.body}</dd>
+            </div>
+          ))}
+        </dl>
+
+        <div className="bg-bg p-7 md:p-8 border-l-[3px] border-accent mb-14 md:mb-16">
+          <p className="text-[0.92rem] text-white/70 leading-relaxed">{OFFER.closer}</p>
+        </div>
+
+        {/* Past partners */}
+        <div className="border-t border-white/[0.07] pt-10 text-center">
+          <div className="text-[0.68rem] font-semibold tracking-[0.18em] uppercase text-muted mb-6">
+            {PAST_PARTNERS.label}
+          </div>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-5">
+            {PAST_PARTNERS.brands.map((b, i) => (
+              <span key={i} className="font-display text-[1.35rem] md:text-[1.6rem] tracking-[0.06em] text-white/75">
+                {b}
+              </span>
+            ))}
+          </div>
+          <p className="text-[0.8rem] text-white/40">{PAST_PARTNERS.note}</p>
+        </div>
+
+        <div className="mt-12 md:mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
+          <span className="text-[1.05rem] text-white/60 font-medium">Have something in mind?</span>
+          <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
+            Start A Conversation
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function ContactSection() {
   return (
     <section id="contact" className="bg-surface py-16 md:py-[120px] px-6 md:px-[60px] text-center">
@@ -618,6 +690,7 @@ export default function App() {
       <AudienceSection />
       <CredentialsSection />
       <CaseStudySection />
+      <DeliverablesSection />
       <ContactSection />
       <Footer />
     </>
