@@ -168,7 +168,7 @@ function About() {
             Arran <span className="text-accent">"Rab"</span> Francis
           </h2>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-4 font-light">
-            I'm a sports news creator running three independent YouTube channels covering competitive Call of Duty, Valorant, and Formula 1. Publishing daily since 2018, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across competitive gaming and motorsport news.
+            I'm a sports news creator running three independent YouTube channels covering Formula 1, competitive Call of Duty, and Valorant. Publishing daily since 2018, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across motorsport and competitive gaming news.
           </p>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-6 font-light">
             My F1 channel is the fastest-growing of the three and the one I'm most excited about right now, reaching an audience across the US, UK, and beyond.
@@ -203,47 +203,49 @@ function ChannelCard({ channel }) {
             {channel.game}
           </div>
 
-          <div className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</div>
+          <h3 className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</h3>
           <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
         </div>
         {channel.logo && (
-          <img src={channel.logo} alt={channel.game} className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mt-2" style={{ mixBlendMode: 'screen' }} />
+          <img src={channel.logo} alt={`${channel.game} logo`} className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] object-contain mt-2" style={{ mixBlendMode: 'screen' }} />
         )}
       </div>
 
       {/* Hero stat */}
       <div className="mb-8 pb-8 border-b border-white/[0.07]">
-        <div className={`font-display text-[3.2rem] leading-none tracking-wide ${colors.num}`}>{channel.subs}</div>
-        <div className="text-[0.68rem] font-semibold tracking-[0.15em] uppercase text-muted mt-1">Subscribers</div>
+        <div className={`font-display text-[3.2rem] leading-none tracking-wide ${colors.num}`}>{channel.uniqueMonthly}</div>
+        <div className="text-[0.68rem] font-semibold tracking-[0.15em] uppercase text-muted mt-1">Unique Monthly Viewers</div>
+        <div className="text-[0.72rem] text-white/45 mt-2">{channel.subs} subscribers</div>
       </div>
 
       {/* Stats grid */}
-      <div className="grid grid-cols-2 gap-5 mb-8">
+      <dl className="grid grid-cols-2 gap-5 mb-8">
         {[
           { num: channel.views90, label: 'Views / 90 Days' },
           { num: channel.views365, label: 'Views / Year' },
           { num: channel.avgDuration, label: 'Avg Watch Time' },
-          { num: channel.uniqueMonthly, label: 'Unique Monthly' },
+          { num: channel.cadence, label: 'Upload Cadence' },
         ].map((s, i) => (
           <div key={i}>
-            <div className="font-display text-[1.5rem] tracking-wide leading-none">{s.num}</div>
-            <div className="text-[0.62rem] font-semibold tracking-[0.12em] uppercase text-muted mt-1">{s.label}</div>
+            <dd className="font-display text-[1.5rem] tracking-wide leading-none">{s.num}</dd>
+            <dt className="text-[0.62rem] font-semibold tracking-[0.12em] uppercase text-muted mt-1">{s.label}</dt>
           </div>
         ))}
-      </div>
+      </dl>
 
       {/* Demo rows */}
-      {[
-        { label: 'Upload cadence', value: channel.cadence },
-        { label: channel.highlight, value: channel.highlightVal },
-        { label: 'Top geo', value: channel.topGeo },
-        { label: 'Core age', value: channel.coreAge },
-      ].map((row, i) => (
-        <div key={i} className="flex justify-between items-center text-[0.78rem] py-2 border-b border-white/[0.07] last:border-b-0 text-white/70">
-          <span>{row.label}</span>
-          <span className="font-semibold text-white">{row.value}</span>
-        </div>
-      ))}
+      <dl>
+        {[
+          { label: channel.highlight, value: channel.highlightVal },
+          { label: 'Top geo', value: channel.topGeo },
+          { label: 'Core age', value: channel.coreAge },
+        ].map((row, i) => (
+          <div key={i} className="flex justify-between items-center text-[0.78rem] py-2 border-b border-white/[0.07] last:border-b-0 text-white/70">
+            <dt>{row.label}</dt>
+            <dd className="font-semibold text-white">{row.value}</dd>
+          </div>
+        ))}
+      </dl>
 
       <div className="inline-block bg-accent/10 text-accent text-[0.62rem] font-bold tracking-[0.15em] uppercase px-2.5 py-1 mt-4 badge-skew">
         {channel.badge}
@@ -552,9 +554,9 @@ function ContactSection() {
         </a>
         <div className="flex justify-center gap-5 flex-wrap">
           {[
+            { label: 'F1 News', url: 'https://youtube.com/@F1NewsTR' },
             { label: 'TacticalRab', url: 'https://youtube.com/@TacticalRab' },
             { label: 'Valorant News', url: 'https://youtube.com/@TRValorant' },
-            { label: 'F1 News', url: 'https://youtube.com/@F1NewsTR' },
           ].map((s, i) => (
             <a
               key={i}
