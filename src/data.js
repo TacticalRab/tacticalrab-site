@@ -119,38 +119,40 @@ export const GEO_DATA = [
   { flag: '🌍', country: 'Rest of World', pct: '~30%' },
 ];
 
-export const OFFERS = [
-  {
-    tag: 'Most Popular',
-    title: 'Integrated Sponsorship',
-    description: 'Woven into video content with a natural ad read — the format trusted by my audience, as proven by the ZOWIE campaign.',
-    features: [
-      '30–90 second in-video integration',
-      'Description link + pinned comment',
-      'Performance reporting included',
-    ],
-    featured: false,
-  },
-  {
-    tag: 'Best Value',
-    title: 'Long-Term Partnership',
-    description: 'Ongoing brand presence across content — building familiarity and trust over weeks rather than a single touchpoint.',
-    features: [
-      'Recurring integration across videos',
-      'Always-on rotational ad units',
-      'Quarterly reporting & optimization',
-    ],
-    featured: true,
-  },
-  {
-    tag: 'Widest Reach',
-    title: 'Multi-Channel Package',
-    description: 'Run across two or all three channels to reach distinct demographics — from 18-year-old Valorant fans to 45-year-old F1 enthusiasts.',
-    features: [
-      'Up to 777K+ unique monthly viewers',
-      'Tailored creative per audience',
-      'Cross-vertical impact reporting',
-    ],
-    featured: false,
-  },
-];
+export const OFFER = {
+  label: 'What You Get',
+  titleTop: 'One Format.',
+  titleBottom: 'Proven To Work.',
+  intro: "I keep this deliberately simple. There's one integration format, refined over several campaigns, and a few decisions we make together to fit your budget and goals.",
+  core: [
+    {
+      title: '60-second integration',
+      body: 'A dedicated segment where I actually talk about the product — what it is, why it matters to this audience, and why I use it. Read in my own words, not a scripted ad. Includes a description link and a pinned comment.',
+    },
+    {
+      title: 'Always-on ticker',
+      body: 'A rolling promotional unit in the lower corner running throughout the video, carrying your product and a QR code. On the ZOWIE campaign this delivered roughly 8 product exposures per viewer on top of the spoken read.',
+    },
+  ],
+  dials: [
+    {
+      title: 'Which channels',
+      body: 'F1, CoD, Valorant, or any combination. Three separate audiences with no meaningful overlap, so a multi-channel buy is genuine incremental reach rather than the same viewers counted again.',
+    },
+    {
+      title: 'One-off or ongoing',
+      body: 'A single campaign, or a recurring presence across weeks. Long-term placements build familiarity and consistently outperform one-off reads.',
+    },
+    {
+      title: 'Reporting depth',
+      body: 'Impressions, click-throughs, watch time and audience response after every campaign as standard. Ongoing partnerships get quarterly reviews and optimisation.',
+    },
+  ],
+  closer: 'No tiered packages and no rate card — audiences and objectives differ too much for that to be useful. Tell me what you\'re launching and what success looks like, and I\'ll come back with a straight number.',
+};
+
+export const PAST_PARTNERS = {
+  label: 'Previously Partnered With',
+  brands: ['ZOWIE BenQ', 'Corsair', 'PrizePicks', 'Underdog Fantasy'],
+  note: 'Campaigns delivered across the gaming channels over the past two years.',
+};
