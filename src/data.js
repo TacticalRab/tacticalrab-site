@@ -156,8 +156,8 @@ export const PAST_PARTNERS = {
   // Add `logo: '/images/partner-x.png'` to any brand once the asset exists.
   // Without a logo it falls back to the brand name set in the display font.
   brands: [
-    { name: 'ZOWIE BenQ', logo: '/images/partner-zowie.png },
-    { name: 'Corsair', logo: '/images/partner-corsair.png },
-    { name: 'PrizePicks', logo: '/images/partner-prizepicks.png },
+    { name: 'ZOWIE BenQ',`logo: '/images/partner-zowie.png },
+    { name: 'Corsair',`logo: '/images/partner-corsair.png },
+    { name: 'PrizePicks',`logo: '/images/partner-prizepicks.png },
   ],
 };
