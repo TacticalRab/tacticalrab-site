@@ -197,14 +197,20 @@ function ChannelCard({ channel }) {
     <div className={`bg-bg p-8 md:p-10 relative overflow-hidden hover:-translate-y-1 transition-transform fade-up ${colors.border}`}>
       <div className="flex justify-between items-start gap-4">
         <div>
-          <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 ${colors.avatarBorder}`} />
+          <a href={channel.url} target="_blank" rel="noopener noreferrer" aria-label={`${channel.name} on YouTube`} className="inline-block">
+            <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 hover:scale-105 transition-transform ${colors.avatarBorder}`} />
+          </a>
 
           <div className={`inline-flex items-center gap-2 text-[0.62rem] font-bold tracking-[0.2em] uppercase px-3 py-1 mb-6 ${colors.tag}`}>
             <div className={`w-[7px] h-[7px] rounded-full ${colors.dot}`} />
             {channel.game}
           </div>
 
-          <h3 className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">{channel.name}</h3>
+          <h3 className="font-display text-[2rem] tracking-[0.05em] mb-1 leading-tight">
+            <a href={channel.url} target="_blank" rel="noopener noreferrer" className="text-white no-underline hover:text-accent transition-colors">
+              {channel.name}
+            </a>
+          </h3>
           <div className="text-[0.72rem] text-muted tracking-[0.1em] mb-8">{channel.handle}</div>
         </div>
         {channel.logo && (
@@ -620,11 +626,7 @@ function ContactSection() {
           tacticalrab@breakingpoint.gg
         </a>
         <div className="flex justify-center gap-5 flex-wrap">
-          {[
-            { label: 'F1 News', url: 'https://youtube.com/@F1NewsTR' },
-            { label: 'TacticalRab', url: 'https://youtube.com/@TacticalRab' },
-            { label: 'Valorant News', url: 'https://youtube.com/@TRValorant' },
-          ].map((s, i) => (
+          {CHANNELS.map((s, i) => (
             <a
               key={i}
               href={s.url}
@@ -633,7 +635,7 @@ function ContactSection() {
               className="flex items-center gap-2 text-[0.68rem] font-semibold tracking-[0.15em] uppercase text-muted no-underline px-4 py-2.5 border border-white/[0.07] hover:text-white hover:border-white/30 transition-all"
             >
               <YouTubeIcon />
-              {s.label}
+              {s.name}
             </a>
           ))}
         </div>
