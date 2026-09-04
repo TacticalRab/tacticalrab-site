@@ -1,3 +1,6 @@
+// Update this month whenever the channel figures are refreshed.
+export const DATA_AS_OF = 'March 2026';
+
 export const CHANNELS = [
   {
     id: 'f1',
@@ -19,6 +22,11 @@ export const CHANNELS = [
     topGeo: 'US 25% · UK 22%',
     coreAge: '25–54 (73%)',
     badge: 'Flagship · Highest Reach',
+    podcast: {
+      text: 'Also a daily podcast on Spotify',
+      detail: '4.6★ from 201 ratings',
+      url: 'https://open.spotify.com/show/0Il18Gc8fo9LSz3Y76YazH',
+    },
   },
   {
     id: 'cod',
