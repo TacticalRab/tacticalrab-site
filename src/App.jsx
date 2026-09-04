@@ -575,11 +575,11 @@ function DeliverablesSection() {
         </div>
 
         {/* Past partners */}
-        <div className="border-t border-white/[0.07] pt-10 text-center">
+        <div className="border-t border-b border-white/[0.07] py-10 text-center">
           <div className="text-[0.68rem] font-semibold tracking-[0.18em] uppercase text-muted mb-6">
             {PAST_PARTNERS.label}
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 mb-5">
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
             {PAST_PARTNERS.brands.map((b, i) => (
               b.logo ? (
                 <img
