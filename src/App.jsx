@@ -523,13 +523,6 @@ function CaseStudySection() {
         </div>
       </div>
 
-      {/* Inline CTA */}
-      <div className="mt-12 md:mt-16 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-        <span className="text-[1.05rem] text-white/60 font-medium">Ready to see results like these?</span>
-        <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
-          Partner With Me
-        </a>
-      </div>
     </section>
   );
 }
@@ -586,22 +579,25 @@ function DeliverablesSection() {
           <div className="text-[0.68rem] font-semibold tracking-[0.18em] uppercase text-muted mb-6">
             {PAST_PARTNERS.label}
           </div>
-          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 mb-5">
+          <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 mb-5">
             {PAST_PARTNERS.brands.map((b, i) => (
-              <span key={i} className="font-display text-[1.35rem] md:text-[1.6rem] tracking-[0.06em] text-white/75">
-                {b}
-              </span>
+              b.logo ? (
+                <img
+                  key={i}
+                  src={b.logo}
+                  alt={b.name}
+                  className="h-7 md:h-9 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                />
+              ) : (
+                <span key={i} className="font-display text-[1.35rem] md:text-[1.6rem] tracking-[0.06em] text-white/75">
+                  {b.name}
+                </span>
+              )
             ))}
           </div>
           <p className="text-[0.8rem] text-white/40">{PAST_PARTNERS.note}</p>
         </div>
 
-        <div className="mt-12 md:mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6">
-          <span className="text-[1.05rem] text-white/60 font-medium">Have something in mind?</span>
-          <a href="#contact" className="bg-accent text-bg font-bold text-[0.78rem] tracking-[0.15em] uppercase px-7 py-3 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all">
-            Start A Conversation
-          </a>
-        </div>
       </div>
     </section>
   );
