@@ -197,8 +197,8 @@ function ChannelCard({ channel }) {
     <div className={`bg-bg p-8 md:p-10 relative overflow-hidden hover:-translate-y-1 transition-transform fade-up ${colors.border}`}>
       <div className="flex justify-between items-start gap-4">
         <div>
-          <a href={channel.url} target="_blank" rel="noopener noreferrer" aria-label={`${channel.name} on YouTube`} className="inline-block">
-            <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover mb-5 border-2 hover:scale-105 transition-transform ${colors.avatarBorder}`} />
+          <a href={channel.url} target="_blank" rel="noopener noreferrer" aria-label={`${channel.name} on YouTube`} className="block w-[72px] mb-5">
+            <img src={channel.avatar} alt={channel.name} className={`w-[72px] h-[72px] rounded-full object-cover border-2 hover:scale-105 transition-transform ${colors.avatarBorder}`} />
           </a>
 
           <div className={`inline-flex items-center gap-2 text-[0.62rem] font-bold tracking-[0.2em] uppercase px-3 py-1 mb-6 ${colors.tag}`}>
