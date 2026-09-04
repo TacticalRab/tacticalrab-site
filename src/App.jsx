@@ -579,14 +579,14 @@ function DeliverablesSection() {
           <div className="text-[0.68rem] font-semibold tracking-[0.18em] uppercase text-muted mb-6">
             {PAST_PARTNERS.label}
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-6 mb-5">
+          <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8 mb-5">
             {PAST_PARTNERS.brands.map((b, i) => (
               b.logo ? (
                 <img
                   key={i}
                   src={b.logo}
                   alt={b.name}
-                  className="h-7 md:h-9 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
+                  className="h-[42px] md:h-[54px] w-auto object-contain opacity-60 hover:opacity-100 transition-opacity"
                 />
               ) : (
                 <span key={i} className="font-display text-[1.35rem] md:text-[1.6rem] tracking-[0.06em] text-white/75">
