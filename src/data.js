@@ -123,36 +123,42 @@ export const OFFER = {
   label: 'What You Get',
   titleTop: 'One Format.',
   titleBottom: 'Proven To Work.',
-  intro: "I keep this deliberately simple. There's one integration format, refined over several campaigns, and a few decisions we make together to fit your budget and goals.",
+  intro: 'One format, refined over several campaigns. A few decisions to fit your budget and goals.',
   core: [
     {
       title: '60-second integration',
-      body: 'A dedicated segment where I actually talk about the product — what it is, why it matters to this audience, and why I use it. Read in my own words, not a scripted ad. Includes a description link and a pinned comment.',
+      body: 'A dedicated segment in my own words — what the product is and why it matters to this audience. Description link and pinned comment included.',
     },
     {
       title: 'Always-on ticker',
-      body: 'A rolling promotional unit in the lower corner running throughout the video, carrying your product and a QR code. On the ZOWIE campaign this delivered roughly 8 product exposures per viewer on top of the spoken read.',
+      body: 'A rolling lower-corner unit carrying your product and a QR code. Delivered roughly 8 exposures per viewer for ZOWIE, on top of the spoken read.',
     },
   ],
   dials: [
     {
       title: 'Which channels',
-      body: 'F1, CoD, Valorant, or any combination. Three separate audiences with no meaningful overlap, so a multi-channel buy is genuine incremental reach rather than the same viewers counted again.',
+      body: 'F1, CoD, Valorant, or any combination. No meaningful overlap, so multi-channel is real incremental reach.',
     },
     {
       title: 'One-off or ongoing',
-      body: 'A single campaign, or a recurring presence across weeks. Long-term placements build familiarity and consistently outperform one-off reads.',
+      body: 'A single campaign or a recurring presence. Long-term placements consistently outperform one-off reads.',
     },
     {
-      title: 'Reporting depth',
-      body: 'Impressions, click-throughs, watch time and audience response after every campaign as standard. Ongoing partnerships get quarterly reviews and optimisation.',
+      title: 'Reporting',
+      body: 'Impressions, click-throughs, watch time and audience response after every campaign.',
     },
   ],
-  closer: 'No tiered packages and no rate card — audiences and objectives differ too much for that to be useful. Tell me what you\'re launching and what success looks like, and I\'ll come back with a straight number.',
+  closer: "No tiers, no rate card. Tell me what you're launching and what success looks like, and I'll come back with a number.",
 };
 
 export const PAST_PARTNERS = {
   label: 'Previously Partnered With',
-  brands: ['ZOWIE BenQ', 'Corsair', 'PrizePicks', 'Underdog Fantasy'],
+  // Add `logo: '/images/partner-x.png'` to any brand once the asset exists.
+  // Without a logo it falls back to the brand name set in the display font.
+  brands: [
+    { name: 'ZOWIE BenQ' },
+    { name: 'Corsair' },
+    { name: 'PrizePicks' },
+  ],
   note: 'Campaigns delivered across the gaming channels over the past two years.',
 };
