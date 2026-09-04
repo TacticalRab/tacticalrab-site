@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFER, PAST_PARTNERS } from './data';
+import { CHANNELS, AGGREGATE, CASE_STUDY, AGE_DATA, GEO_DATA, OFFER, PAST_PARTNERS, DATA_AS_OF } from './data';
 
 /* ───────────────────────────── Utility Components ───────────────────────────── */
 
@@ -118,7 +118,7 @@ function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-[800px]">
         <h1 className="font-display text-[clamp(2.2rem,5.5vw,5.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
-          #1 in F1 & esports news.<br />
+          #1 in F1 & esports daily news.<br />
           <span className="text-accent">250M+ lifetime views.</span>
         </h1>
 
@@ -254,6 +254,18 @@ function ChannelCard({ channel }) {
         ))}
       </dl>
 
+      {channel.podcast && (
+        <a
+          href={channel.podcast.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-between gap-3 mt-4 pt-3 border-t border-white/[0.07] text-[0.75rem] text-white/50 no-underline hover:text-white/80 transition-colors"
+        >
+          <span>{channel.podcast.text}</span>
+          <span className="font-semibold text-white/70 whitespace-nowrap">{channel.podcast.detail}</span>
+        </a>
+      )}
+
       <div className="inline-block bg-accent/10 text-accent text-[0.62rem] font-bold tracking-[0.15em] uppercase px-2.5 py-1 mt-4 badge-skew">
         {channel.badge}
       </div>
@@ -275,6 +287,10 @@ function ChannelsSection() {
         {CHANNELS.map((ch) => (
           <ChannelCard key={ch.id} channel={ch} />
         ))}
+      </div>
+
+      <div className="mt-6 text-center text-[0.72rem] text-white/35">
+        All channel figures correct as of {DATA_AS_OF}.
       </div>
 
       {/* Inline CTA */}
@@ -463,7 +479,7 @@ function CaseStudySection() {
         <div className="relative overflow-hidden p-8 md:p-14 case-watermark" style={{ background: 'linear-gradient(135deg, #1a0a2e 0%, #2d1b4e 100%)' }}>
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
             <div>
-              <div className="text-[0.68rem] font-bold tracking-[0.3em] uppercase text-pink mb-3.5">Case Study · Q4 2024</div>
+              <div className="text-[0.68rem] font-bold tracking-[0.3em] uppercase text-pink mb-3.5">Case Study</div>
               <h3 className="font-display text-[2rem] md:text-[2.6rem] tracking-[0.05em] leading-none">
                 ZOWIE BenQ <span className="text-pink">×</span> TacticalRab
               </h3>
