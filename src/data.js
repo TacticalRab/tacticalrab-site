@@ -160,5 +160,4 @@ export const PAST_PARTNERS = {
     { name: 'Corsair', logo: '/images/partner-corsair.png' },
     { name: 'PrizePicks', logo: '/images/partner-prizepicks.png' },
   ],
-  note: 'Campaigns delivered across the gaming channels over the past two years.',
 };
