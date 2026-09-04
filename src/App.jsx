@@ -116,9 +116,9 @@ function Hero() {
       }} />
 
       {/* Content */}
-      <div className="relative z-10 max-w-[800px]">
-        <h1 className="font-display text-[clamp(2.2rem,5.5vw,5.5rem)] leading-[0.95] tracking-wide mb-6 md:mb-8">
-          #1 in F1 & esports daily news.<br />
+      <div className="relative z-10 max-w-[1200px]">
+        <h1 className="font-display text-[clamp(2.1rem,5.2vw,5rem)] leading-[0.95] tracking-[0.02em] mb-6 md:mb-8">
+          <span className="lg:whitespace-nowrap">#1 in F1 &amp; esports daily news.</span><br />
           <span className="text-accent">250M+ lifetime views.</span>
         </h1>
 
