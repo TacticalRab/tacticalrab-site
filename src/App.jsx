@@ -595,7 +595,6 @@ function DeliverablesSection() {
               )
             ))}
           </div>
-          <p className="text-[0.8rem] text-white/40">{PAST_PARTNERS.note}</p>
         </div>
 
       </div>
