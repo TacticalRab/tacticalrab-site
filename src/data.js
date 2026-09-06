@@ -65,7 +65,7 @@ export const CHANNELS = [
     uniqueMonthly: '128K',
     cadence: '1 video / day',
     highlight: 'Audience outside US',
-    highlightVal: '22%',
+    highlightVal: '70%',
     topGeo: 'US 30% · IN 14%',
     coreAge: '18–34 (80%)',
     badge: 'Youngest · Most International',
