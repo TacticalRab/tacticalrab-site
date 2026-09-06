@@ -410,7 +410,7 @@ function AudienceSection() {
           </div>
           <div className="bg-bg p-7 border-l-[3px] border-f1light mt-3">
             <p className="text-[0.88rem] text-white/65 leading-relaxed">
-              The F1 channel's <strong className="text-white">26.8% TV viewership</strong> is notable for brand awareness. Nearly 1 in 3 viewers watch on a big screen — amplifying visual product integrations significantly beyond typical YouTube figures.
+              The F1 channel's <strong className="text-white">26.8% TV viewership</strong> is notable for brand awareness. More than 1 in 4 viewers watch on a big screen — amplifying visual product integrations significantly beyond typical YouTube figures.
             </p>
           </div>
         </div>
