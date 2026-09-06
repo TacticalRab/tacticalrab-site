@@ -308,9 +308,9 @@ function ChannelsSection() {
 
 function NetworkSection() {
   const stats = [
-    { num: AGGREGATE.subs, label: 'Total Subscribers', sub: 'Across 3 channels' },
-    { num: AGGREGATE.views90, label: 'Views Last 90 Days', sub: 'Consistent growth trajectory' },
-    { num: AGGREGATE.uniqueMonthly, label: 'Unique Monthly Viewers', sub: 'Minimal audience overlap' },
+    { num: 300K+, label: 'Total Subscribers', sub: 'Across 3 channels' },
+    { num: 14.1M, label: 'Views Last 90 Days', sub: 'Consistent growth trajectory' },
+    { num: 600K+, label: 'Unique Monthly Viewers', sub: 'Minimal audience overlap' },
     { num: AGGREGATE.dailyUploads, label: 'Videos Published Daily', sub: '365 days a year' },
   ];
 
