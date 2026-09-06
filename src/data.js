@@ -1,5 +1,5 @@
 // Update this month whenever the channel figures are refreshed.
-export const DATA_AS_OF = 'March 2026';
+export const DATA_AS_OF = 'September 2026';
 
 export const CHANNELS = [
   {
@@ -103,21 +103,21 @@ export const CASE_STUDY = {
 
 export const AGE_DATA = {
   f1: [
-    { range: '18–24', pct: 9.3 },
-    { range: '25–34', pct: 27.2 },
-    { range: '35–44', pct: 26.4 },
-    { range: '45–54', pct: 18.5 },
-    { range: '55–64', pct: 11.8 },
+    { range: '18–24', pct: 9.1 },
+    { range: '25–34', pct: 26.6 },
+    { range: '35–44', pct: 25.1 },
+    { range: '45–54', pct: 17.5 },
+    { range: '55–64', pct: 11.9 },
   ],
   cod: [
-    { range: '18–24', pct: 16.3 },
+    { range: '18–24', pct: 9.5 },
     { range: '25–34', pct: 59.8 },
-    { range: '35–44', pct: 17.8 },
+    { range: '35–44', pct: 22.4 },
   ],
   val: [
-    { range: '18–24', pct: 39.2 },
-    { range: '25–34', pct: 43.1 },
-    { range: '35–44', pct: 9.1 },
+    { range: '18–24', pct: 30.8 },
+    { range: '25–34', pct: 46.4 },
+    { range: '35–44', pct: 9.9 },
   ],
 };
 
