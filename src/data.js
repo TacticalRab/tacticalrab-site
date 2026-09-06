@@ -67,7 +67,7 @@ export const CHANNELS = [
     highlight: 'Audience outside US',
     highlightVal: '70%',
     topGeo: 'US 30% · IN 14%',
-    coreAge: '18–34 (80%)',
+    coreAge: '18–34 (77%)',
     badge: 'Youngest · Most International',
   },
 ];
