@@ -125,7 +125,7 @@ function Hero() {
         <div className="flex items-end gap-6 md:gap-10">
           <div>
             <div className="font-display text-[clamp(3rem,6vw,5rem)] tracking-wide text-accent leading-none">
-              777K<span className="text-white/40">+</span>
+              600K<span className="text-white/40">+</span>
             </div>
             <div className="text-[0.72rem] font-semibold tracking-[0.2em] uppercase text-muted mt-1.5">
               Unique viewers every month
@@ -321,11 +321,11 @@ function NetworkSection() {
         <div className="font-display text-[clamp(1.5rem,3vw,2.4rem)] tracking-[0.05em] text-white/30 mb-6 leading-relaxed">
           Three channels. Zero overlap.
           <strong className="text-white block text-[clamp(3.5rem,8vw,7rem)] leading-[0.9] tracking-wide">
-            58<span className="text-accent">M+</span> Views per Year
+            50<span className="text-accent">M+</span> Views per Year
           </strong>
         </div>
         <p className="text-[0.95rem] text-white/45 max-w-[580px] mx-auto mb-12 md:mb-16 leading-relaxed">
-          Each channel was built organically with no cross-promotion — a partnership across all three reaches <strong className="text-white">777K+ unique monthly viewers</strong>, not the same audience counted three times.
+          Each channel was built organically with no cross-promotion — a partnership across all three reaches <strong className="text-white">600K+ unique monthly viewers</strong>, not the same audience counted three times.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-0.5 mb-12 md:mb-16">
           {stats.map((s, i) => (
@@ -410,7 +410,7 @@ function AudienceSection() {
           </div>
           <div className="bg-bg p-7 border-l-[3px] border-f1light mt-3">
             <p className="text-[0.88rem] text-white/65 leading-relaxed">
-              The F1 channel's <strong className="text-white">29.4% TV viewership</strong> is notable for brand awareness. Nearly 1 in 3 viewers watches on a big screen — amplifying visual product integrations significantly beyond typical YouTube figures.
+              The F1 channel's <strong className="text-white">26.8% TV viewership</strong> is notable for brand awareness. Nearly 1 in 3 viewers watch on a big screen — amplifying visual product integrations significantly beyond typical YouTube figures.
             </p>
           </div>
         </div>
