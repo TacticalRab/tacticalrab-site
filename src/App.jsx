@@ -405,7 +405,7 @@ function AudienceSection() {
 
           <div className="bg-bg p-7 border-l-[3px] border-accent mt-7">
             <p className="text-[0.88rem] text-white/65 leading-relaxed">
-              <strong className="text-white">95%+ male across all three channels.</strong> Core viewership aged 18–44. US-dominant with strong UK and global representation — suited to English-language product launches in tech, gaming, automotive, and lifestyle.
+              <strong className="text-white">95%+ male across all three channels.</strong> US-dominant with strong UK and global representation — suited to English-language product launches in tech, gaming, automotive, and lifestyle.
             </p>
           </div>
           <div className="bg-bg p-7 border-l-[3px] border-f1light mt-3">
