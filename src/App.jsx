@@ -172,7 +172,7 @@ function About() {
             I'm a sports news creator running three independent YouTube channels covering Formula 1, competitive Call of Duty, and Valorant. Publishing daily since 2018, I've built three genuinely separate audiences — no cross-promotion, no shared fanbases. Over eight years, I've established myself as one of the most consistent voices across motorsport and competitive gaming news.
           </p>
           <p className="text-[0.95rem] text-white/60 leading-[1.8] mb-6 font-light">
-            My F1 channel is the fastest-growing of the three and the one I'm most excited about right now, reaching an audience across the US, UK, and beyond.
+            My F1 channel is the largest of the three and the one I'm most excited about right now, reaching an audience across the US, UK, and beyond.
           </p>
           <a href="#channels" className="bg-accent text-bg font-bold text-[0.85rem] tracking-[0.15em] uppercase px-9 py-4 no-underline btn-skew hover:bg-white hover:-translate-y-0.5 transition-all inline-block">
             See the Channels
